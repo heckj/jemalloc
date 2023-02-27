@@ -1,10 +1,7 @@
 #!/bin/sh
 set -e
 
-echo "Activating feature 'hello'"
-
-GREETING=${GREETING:-undefined}
-echo "The provided greeting is: $GREETING"
+echo "Activating feature 'jemalloc'"
 
 # The 'install.sh' entrypoint script is always executed as the root user.
 #
@@ -18,12 +15,4 @@ echo "The effective dev container remoteUser's home directory is '$_REMOTE_USER_
 echo "The effective dev container containerUser is '$_CONTAINER_USER'"
 echo "The effective dev container containerUser's home directory is '$_CONTAINER_USER_HOME'"
 
-cat > /usr/local/bin/hello \
-<< EOF
-#!/bin/sh
-RED='\033[0;91m'
-NC='\033[0m' # No Color
-echo "\${RED}${GREETING}, \$(whoami)!\${NC}"
-EOF
-
-chmod +x /usr/local/bin/hello
+sudo apt-get install -y libjemalloc-dev
