@@ -1,5 +1,6 @@
 #!/bin/sh
 set -e
+set -x
 
 echo "Activating feature 'jemalloc'"
 
@@ -15,4 +16,5 @@ echo "The effective dev container remoteUser's home directory is '$_REMOTE_USER_
 echo "The effective dev container containerUser is '$_CONTAINER_USER'"
 echo "The effective dev container containerUser's home directory is '$_CONTAINER_USER_HOME'"
 
+apt-get update
 apt-get install -y libjemalloc-dev
