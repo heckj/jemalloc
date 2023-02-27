@@ -2,7 +2,7 @@
     "jemalloc": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "jemalloc": { 
+            "jemalloc": {
             }
         }
     }

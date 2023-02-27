@@ -1,6 +1,6 @@
 {
     "jemalloc": {
-        "image": "swift:5.7",
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "jemalloc": {
             }
