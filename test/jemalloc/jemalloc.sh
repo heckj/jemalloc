@@ -10,7 +10,7 @@ source dev-container-features-test-lib
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "execute command" bash -c "dpkg-query -l libjemalloc-dev"
+check "execute command" bash -c "dpkg-query --no-pager -l libjemalloc-dev"
 
 # Report results
 # If any of the checks above exited with a non-zero exit code, the test will fail.
