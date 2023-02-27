@@ -13,12 +13,10 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - jemalloc
         baseImage:
-          - debian:latest
           - ubuntu:latest
-          - mcr.microsoft.com/devcontainers/base:ubuntu
+          - swift:5.7
     steps:
       - uses: actions/checkout@v3
 
@@ -34,8 +32,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - jemalloc
     steps:
       - uses: actions/checkout@v3
 
