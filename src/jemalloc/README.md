@@ -1,25 +1,17 @@
 
-# Hello, World! (hello)
+# jemalloc
 
-A hello world feature
+A feature that installs the jemalloc allocator library ('libjemalloc-dev')
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/hello:1": {
+    "ghcr.io/heckj/jemalloc/jemalloc:1": {
         "version": "latest"
     }
 }
 ```
-
-## Options
-
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
-| greeting | Select a pre-made greeting, or enter your own | string | hey |
-
-
 
 ---
 
