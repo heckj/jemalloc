@@ -16,7 +16,6 @@ jobs:
           - jemalloc
         baseImage:
           - ubuntu:latest
-          - swift:5.7
     steps:
       - uses: actions/checkout@v3
 
